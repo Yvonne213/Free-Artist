@@ -1,9 +1,10 @@
 body {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: monospace;
   text-align: center;
   font-family: 'C64', monospace;
+  text-transform: uppercase;
 }
 
 .terminal {
@@ -11,7 +12,7 @@ body {
   padding: 20px;
   white-space: pre-wrap;
   overflow-y: scroll;
-  max-height: 480px;
+  max-height: 500px;
 }
 
 button {
@@ -34,18 +35,8 @@ button:hover {
 }
 
 #history li {
-  border-bottom: 1px solid black;
+  border-bottom: 2px dotted black;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
 
-
-.header{
-  text-align: center;
-  margin-top:100px;
-  position: static;
-}
-
-.typein{
-  padding: 30px;
-}

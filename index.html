@@ -7,35 +7,44 @@
   <script src="p5.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
-  <title>Basic</title>
+  <title>User Interface</title>
 </head>
 <body>
 
-  <header>
+  <br>
+  <header class="header">
  <pre>
   ░█▀█░█▀▄░▀█▀░▀█▀░█▀▀░▀█▀░░░█▄█░█▀█░█▀█░▀█▀░█▀▀░█▀▀░█▀▀░▀█▀░█▀█░░░█▀█░█▀█░█▀▀░█▄█
   ░█▀█░█▀▄░░█░░░█░░▀▀█░░█░░░░█░█░█▀█░█░█░░█░░█▀▀░█▀▀░▀▀█░░█░░█░█░░░█▀▀░█░█░█▀▀░█░█
   ░▀░▀░▀░▀░░▀░░▀▀▀░▀▀▀░░▀░░░░▀░▀░▀░▀░▀░▀░▀▀▀░▀░░░▀▀▀░▀▀▀░░▀░░▀▀▀░░░▀░░░▀▀▀░▀▀▀░▀░▀
 </pre>
-
   </header>
-  <div>
+  <br>
+  <div class="typein">
+    <div>
     <label for="verbInput">Enter Verbs (,):</label>
     <input type="text" id="verbInput">
   </div>
+  <br>
   <div>
     <label for="nounInput">Enter Nouns (,):</label>
     <input type="text" id="nounInput">
   </div>
+  <br>
   <div>
     <label for="timeInput">Enter Times (,):</label>
     <input type="text" id="timeInput">
   </div>
+</div>
+
+  <br>
   <button id="display-button">Display Sentence</button>
   <button id="generate-button">Generate Sentence</button>
   <pre id="terminal" class="terminal"></pre>
+
+  <br>
   <div>
-    <h2>TYPE IN History:</h2>
+    <h2>TYPE IN HISTORT:</h2>
     <ul id="history" class="terminal"></ul>
   </div>
 

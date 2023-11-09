@@ -26,7 +26,7 @@ ws.onmessage = function (event) {
 
     // Add a black line between history items, except for the last one
     if (index < sentenceHistory.length - 1) {
-      listItem.style.borderBottom = "1px solid black";
+      // listItem.style.borderBottom = "1px solid black";
       listItem.style.marginBottom = "10px";
       listItem.style.paddingBottom = "10px";
     }
@@ -98,7 +98,7 @@ function generateUserSentence() {
 
       // Add a black line between history items, except for the last one
       if (index < sentenceHistory.length - 1) {
-        listItem.style.borderBottom = "1px solid black";
+        // listItem.style.borderBottom = "1px solid black";
         listItem.style.marginBottom = "10px";
         listItem.style.paddingBottom = "10px";
       }
@@ -133,8 +133,6 @@ function generateRandomSentence() {
   // If the window is already opened, refresh its content; otherwise, open a new window
 
   sendMessage(generatedSentence);
-
-
 
   
 }
