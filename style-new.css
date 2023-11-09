@@ -15,20 +15,6 @@ body {
   max-height: 500px;
 }
 
-button {
-  font-family: 'C64', monospace;
-  background-color: #00ff00;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #00dd00;
-}
-
 #history {
   list-style: none; /* Remove the default list-style */
   padding: 0; /* Remove default list padding */
