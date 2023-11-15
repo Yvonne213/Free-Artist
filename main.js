@@ -18,6 +18,7 @@ ws.onmessage = function (event) {
   terminal.textContent = generatedSentence;
 
   // Update the sentence history list
+  
   const historyList = document.getElementById("history");
   historyList.innerHTML = '';
   sentenceHistory.forEach((sentence, index) => {
@@ -27,6 +28,8 @@ ws.onmessage = function (event) {
     historyList.appendChild(listItem);
 
   });
+  historyList.scrollTop = historyList.scrollHeight;
+  console.log(historyList.scrollHeight);
 };
 
 
