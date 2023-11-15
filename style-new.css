@@ -1,28 +1,56 @@
+
+html {
+  height: 100%;
+  margin: 0;
+}
 body {
+  height: 100%;
+  margin: 0;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  font-family: monospace;
   text-align: center;
-  font-family: 'C64', monospace;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  /* font-family: "pf-videotext", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "eurostile-extended", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
-.terminal {
+.terminal1 {
   border: 1px solid #fc8888;
   padding: 20px;
   white-space: pre-wrap;
   overflow-y: scroll;
-  max-height: 500px;
+  max-height: 100%;
+  max-width: 50%;
+  font-size: 20px;
+
+  color:#fc8888;
+  font-family: "eurostile-extended", sans-serif;
+font-weight: 700;
+font-style: normal;
+ 
 }
 
-#history {
-  list-style: none; /* Remove the default list-style */
-  padding: 0; /* Remove default list padding */
+.terminal2 {
+  font-size: 20px;
+ list-style: none;  /* Remove the default list-style */
+  padding: 20px; /* Remove default list padding */
+  border: 1px solid #fc8888;
+  padding: 20px;
+  white-space: pre-wrap;
+  overflow-y: scroll;
+  max-height: 100%;
+  max-width: 50%;
+
 }
 
 #history li {
-  border-bottom: 2px dotted black;
-  margin-bottom: 10px;
+  border-bottom: 1px dotted black;
+  margin-bottom: 20px;
   padding-bottom: 10px;
-}
-
+} 

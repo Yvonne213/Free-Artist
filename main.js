@@ -37,7 +37,7 @@ ws.onmessage = function (event) {
 
 };
 
-
+// ---------------------------------------------------------------------
 function sendMessage(content_content){
   console.log("send out ws message");
   ws.send(content_content);
@@ -95,13 +95,6 @@ function generateUserSentence() {
     sentenceHistory.forEach((sentence, index) => {
       const listItem = document.createElement("li");
       listItem.textContent = sentence;
-
-      // Add a black line between history items, except for the last one
-      if (index < sentenceHistory.length - 1) {
-        // listItem.style.borderBottom = "1px solid black";
-        listItem.style.marginBottom = "10px";
-        listItem.style.paddingBottom = "10px";
-      }
 
       historyList.appendChild(listItem);
     });
