@@ -31,7 +31,7 @@ h2{
   white-space: pre-wrap;
   overflow-y: scroll;
   max-height: 100%;
-  max-width: 50%;
+  max-width: 30%;
   font-size: 20px;
   overflow: hidden; /* Hide scrollbars */
   color:#fc8888;
@@ -54,7 +54,7 @@ font-style: normal;
   white-space: pre-wrap;
   overflow-y: scroll; /* Add the ability to scroll */
   max-height: 100%;
-  max-width: 50%;
+  max-width: 30%;
 
 }
 .terminal2::-webkit-scrollbar {
