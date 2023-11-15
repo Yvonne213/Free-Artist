@@ -32,6 +32,7 @@ ws.onmessage = function (event) {
     }
 
     historyList.appendChild(listItem);
+
   });
 
 
