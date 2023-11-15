@@ -34,6 +34,7 @@ h2{
   max-width: 30%;
   font-size: 20px;
   overflow: hidden; /* Hide scrollbars */
+
   color:#fc8888;
   font-family: "eurostile-extended", sans-serif;
 font-weight: 700;
@@ -42,18 +43,18 @@ font-style: normal;
 }
 
 .terminal2 {
+
   margin: auto; /* Center the div horizontally */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 
   font-size: 20px;
  list-style: none;  /* Remove the default list-style */
-  padding: 20px; /* Remove default list padding */
   border: 1px solid #fc8888;
   padding: 20px;
   white-space: pre-wrap;
   overflow-y: scroll; /* Add the ability to scroll */
-  max-height: 100%;
+  max-height: 900px;;
   max-width: 30%;
 
 }
@@ -62,7 +63,12 @@ font-style: normal;
 }
 
 #history li {
-  border-bottom: 1px dotted black;
+
+  width: 100%;
+  bottom: 100px;
+  /* border-bottom: 1px dotted black; */
+  border-style: hidden;
   margin-bottom: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+ 
 } 

@@ -7,11 +7,14 @@ body {
 }
 
 .terminal {
+  margin: auto; /* Center the div horizontally */
+  overflow: hidden; /* Hide scrollbars */
   border: 1px solid #fc8888;
   padding: 20px;
   white-space: pre-wrap;
   overflow-y: scroll;
   max-height: 480px;
+  max-width: 30%;
 }
 
 button {
@@ -29,8 +32,11 @@ button:hover {
 }
 
 #history {
+  margin: auto; /* Center the div horizontally */
+  overflow: hidden; /* Hide scrollbars */
   list-style: none; /* Remove the default list-style */
   padding: 0; /* Remove default list padding */
+  max-width: 30%;
 }
 
 #history li {
