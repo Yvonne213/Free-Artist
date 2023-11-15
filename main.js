@@ -34,9 +34,8 @@ ws.onmessage = function (event) {
     historyList.appendChild(listItem);
 
   });
-
-
 };
+
 
 // ---------------------------------------------------------------------
 function sendMessage(content_content){

@@ -24,6 +24,8 @@ h2{
   font-weight: 700;
 }
 
+
+
 .terminal1 {
   margin: auto; /* Center the div horizontally */
   border: 1px solid #fc8888;
@@ -40,14 +42,16 @@ h2{
 font-weight: 700;
 font-style: normal;
  
+
 }
+
+
 
 .terminal2 {
 
   margin: auto; /* Center the div horizontally */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-
   font-size: 20px;
  list-style: none;  /* Remove the default list-style */
   border: 1px solid #fc8888;
@@ -56,6 +60,7 @@ font-style: normal;
   overflow-y: scroll; /* Add the ability to scroll */
   max-height: 900px;;
   max-width: 30%;
+
 
 }
 .terminal2::-webkit-scrollbar {
@@ -72,3 +77,4 @@ font-style: normal;
   padding-bottom: 20px;
  
 } 
+
