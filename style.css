@@ -42,7 +42,7 @@ h1{
 .typein{
 text-align: left;
 margin-left: 100px;
-margin-bottom: 50px;
+margin-bottom: 10px;
 font-size: 20px;
 }
 
@@ -81,9 +81,13 @@ button:hover {
   box-shadow: 0 8px 16px 0 rgba(255, 124, 124, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 .button-container {
+
   display: flex;
   gap: 50px; /* Adjust the space between buttons by changing this value */
-  margin-left:100px;
+  justify-content: flex-end; 
+  margin-top:10px;
+  margin-right: 100px;
+  margin-bottom: 50px;
 }
 
 .terminal {
@@ -92,8 +96,8 @@ button:hover {
   border: 1px solid #ffffff;
   padding: 20px;
   white-space: pre-wrap;
-  max-height: 400px;
-  max-width: 300px;
+  max-height: 300px;
+  max-width: 800px;
   
   font-size: 20px;
   font-family: "magistral", sans-serif;
