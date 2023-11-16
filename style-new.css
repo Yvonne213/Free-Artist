@@ -83,7 +83,7 @@ main {
   scroll-behavior: smooth;
   overflow: scroll;
   
-  height: 66vh;
+  height: 75vh;
   max-width: 400px;
 }
 

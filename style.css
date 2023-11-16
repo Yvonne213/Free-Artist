@@ -1,48 +1,91 @@
-body {
-  background-color: rgb(0, 0, 0);
+body,html {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+
+  background-color: rgb(255, 209, 209);
   color: rgb(255, 255, 255);
-  font-family: monospace;
   text-align: center;
-  font-family: 'C64', monospace;
+
+  font-family: "magistral", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.grid-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 10px 10px, #ffffff 1px, transparent 1px);
+  background-size: 20px 20px; /* Adjust the size of each dot and spacing */
+}
+
+h1{
+  white-space: nowrap;
+  font-size: 70px;
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+}
+.text1{
+  white-space: nowrap;
+  font-size: 30px;
+  word-spacing: 30px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.button1,.button2{
+  padding: 45px 16px;
+  background-color: rgb(255, 209, 209);
+  color: rgb(255, 255, 255);
+  border: 1.5px solid #ffffff;
+  font-size: 20px;
+
+  font-family: "magistral", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+button:hover {
+  background-color: #ffbaba;
+  box-shadow: 0 8px 16px 0 rgba(255, 124, 124, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 
 .terminal {
   margin: auto; /* Center the div horizontally */
-  overflow: hidden; /* Hide scrollbars */
-  border: 1px solid #fc8888;
+  border: 1px solid #ffffff;
   padding: 20px;
   white-space: pre-wrap;
-  overflow-y: scroll;
-  max-height: 480px;
-  max-width: 30%;
+  max-height: 400px;
+  max-width: 300px;
+  
+  font-size: 20px;
+  font-family: "magistral", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+list-style: none;
+scroll-behavior: smooth;
+overflow: scroll;
+/* Center the div horizontally */
+-ms-overflow-style: none;
+/* IE and Edge */
+scrollbar-width: none;
+/* Firefox */
 }
 
-button {
-  font-family: 'C64', monospace;
-  background-color: #00ff00;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #00dd00;
-}
-
-#history {
-  margin: auto; /* Center the div horizontally */
-  overflow: hidden; /* Hide scrollbars */
-  list-style: none; /* Remove the default list-style */
-  padding: 0; /* Remove default list padding */
-  max-width: 30%;
+.terminal::-webkit-scrollbar {
+  display: none;
 }
 
 #history li {
-  border-bottom: 1px solid black;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+ 
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 
