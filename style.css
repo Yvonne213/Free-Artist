@@ -55,6 +55,7 @@ input {
   width: 200px; /* Make sure the width doesn't exceed the maximum width */
   background-color:  rgb(249, 198, 198);
   border: 1px solid #ffffff;
+  color: #ff6e6e;
 }
 input::placeholder {
   color: #ffffff5d; /* Set the color you want for the placeholder text */
