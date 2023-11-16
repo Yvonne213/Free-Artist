@@ -100,7 +100,7 @@ button:hover {
 }
 
 .border{
-  border: 1px solid #ffffff;
+  border: 1.5px solid #ffffff;
   max-width: 800px;
   padding: 20px;
   margin: auto; /* Center the div horizontally */
