@@ -34,7 +34,11 @@ h1{
   margin-top: -50px;
 }
 .text1{
- 
+  background-color: rgba(254, 98, 98, 0.281);
+  background-clip: content-box;
+  background-size:100% 20px;
+  width: 240px;
+
   font-size: 30px;
   word-spacing: 30px;
   text-align: left;
@@ -95,11 +99,17 @@ button:hover {
   margin-bottom: 50px;
 }
 
+.border{
+  border: 1px solid #ffffff;
+  max-width: 800px;
+  padding: 20px;
+  margin: auto; /* Center the div horizontally */
+}
 .terminal {
 
   margin: auto; /* Center the div horizontally */
-  border: 1px solid #ffffff;
-  padding: 20px;
+ 
+  
   white-space: pre-wrap;
   max-height: 300px;
   max-width: 800px;
