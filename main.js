@@ -93,6 +93,9 @@ function generateUserSentence() {
       listItem.textContent = sentence;
 
       historyList.appendChild(listItem);
+      
+      historyList.scrollTop = historyList.scrollHeight;
+  console.log(historyList.scrollHeight);
     });
   }
   // Generate the sentence
