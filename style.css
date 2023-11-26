@@ -84,10 +84,12 @@ input:hover {
   font-style: normal;
 
   border-radius: 5px;
+
 }
 button:hover {
   background-color: #ffbaba;
   box-shadow: 0 8px 16px 0 rgba(255, 124, 124, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+
 }
 .button-container {
 
@@ -97,6 +99,7 @@ button:hover {
   margin-top:10px;
   margin-right: 100px;
   margin-bottom: 50px;
+
 }
 
 .border{
