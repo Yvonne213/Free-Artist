@@ -111,10 +111,9 @@ button:hover {
 .terminal {
 
   margin: auto; /* Center the div horizontally */
- 
   
   white-space: pre-wrap;
-  max-height: 300px;
+  max-height: 380px;
   max-width: 800px;
   
   font-size: 20px;
