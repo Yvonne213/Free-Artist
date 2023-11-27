@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="https://use.typekit.net/tfu4bnb.css">
   <meta charset="UTF-8">
@@ -15,40 +16,47 @@
 
   <title>Artist Interface</title>
 </head>
+
 <body>
 
   <div class="grid-container"></div>
-<div class="container">
-  <div class="session1">
-    <marquee class="moving1" behavior="scroll" direction="right">Who do you think is an artist？Who can be an artist？Who might be an artist？</marquee>
-    <marquee class="moving2" behavior="scroll" direction="left">The Person who [verb] [noun] [time or place] is an artist?</marquee>
-    <marquee class="moving3" behavior="scroll" direction="right">Your definition will be permanently stored in the blockchain.</marquee>
-    <marquee class="moving3" behavior="scroll" direction="left">Your participation will contribute to artist cricle.</marquee>
-    <marquee class="moving2" behavior="scroll" direction="right">Let's define artist together.</marquee>
-    <br>
-    <div class="typein">
-      <label for="verbInput">Enter Verb</label>
+  <div class="container">
+    <div class="session1">
+      <div class="marquees">
+        <marquee class="moving1" behavior="scroll" direction="right">Who do you think is an artist？Who can be an
+          artist？Who might be an artist？</marquee>
+        <marquee class="moving2" behavior="scroll" direction="left">The Person who [verb] [noun] [time or place] is an
+          artist?</marquee>
+        <marquee class="moving3" behavior="scroll" direction="right">Your definition will be permanently stored in the
+          blockchain.</marquee>
+        <marquee class="moving3" behavior="scroll" direction="left">Your participation will contribute to artist cricle.
+        </marquee>
+        <marquee class="moving2" behavior="scroll" direction="right">Let's define artist together.</marquee>
+      </div>
       <br>
-      <input type="text" id="verbInput" placeholder="wanders...">
-      <br>
-      <label for="nounInput">Enter Noun</label>
-      <br>
-      <input type="text" id="nounInput" placeholder="Gallery...">
-      <br>
-      <label for="timeInput">Enter Time or Place</label>
-      <br>
-      <input type="text" id="timeInput" placeholder="Today...">
-    </div>
+      <div class="typein">
+        <label for="verbInput">Enter Verb</label>
+        <br>
+        <input type="text" id="verbInput" placeholder="wanders...">
+        <br>
+        <label for="nounInput">Enter Noun</label>
+        <br>
+        <input type="text" id="nounInput" placeholder="Gallery...">
+        <br>
+        <label for="timeInput">Enter Time or Place</label>
+        <br>
+        <input type="text" id="timeInput" placeholder="Today...">
+      </div>
 
-    <br>
-    <div class="button-container">
-    <button class="button1" id="display-button">Display ur poem</button>
-    <button class="button2" id="generate-button">Generate Artists</button>
-  </div>
+      <br>
+      <div class="button-container">
+        <button class="button1" id="display-button">Display ur poem</button>
+        <button class="button2" id="generate-button">Generate Artists</button>
+      </div>
     </div>
 
     <div class="session2">
-      <header class="header">   
+      <header class="header">
         <h1>MANIFESTO POEM PROCESSOR</h1>
       </header>
 
@@ -61,17 +69,17 @@
         <ul id="history" class="terminal"></ul>
       </div>
     </div>
- 
-<div class="session3">
-  <p class="typing" id="typing-text">
-    </p>
-  <div class="text1">
-    <p >2023 @3e-von</p>
-  </div>
-</div>
 
-   <!---------connection status----------->
-   <!-- <div class="login-container">
+    <div class="session3">
+      <p class="typing" id="typing-text">
+      </p>
+      <div class="text1">
+        <p>2023 @3e-von</p>
+      </div>
+    </div>
+
+    <!---------connection status----------->
+    <!-- <div class="login-container">
    
     <span id="connectionStatus"><small>🔴 Not connected</small></span>
 
@@ -80,9 +88,10 @@
     <button id="connectButton">Connect</button>
     <span id="loadingIconConnect" class="loading-icon"></span>
   </div> -->
- <!---------------------------------------->
+    <!---------------------------------------->
 
 
-</div>
+  </div>
 </body>
+
 </html>

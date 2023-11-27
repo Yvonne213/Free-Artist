@@ -1,4 +1,5 @@
-body,html {
+body,
+html {
   margin: 0;
   position: relative;
   z-index: 1;
@@ -11,43 +12,106 @@ body,html {
   font-weight: 700;
   font-style: normal;
 
-  
+
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /*3 columns */
-  grid-gap: 20px; /* Gap between grid items */
-}
-.session1{
-  background-color: #e3878727; 
-  padding: 20px; /* Add some padding for better visibility */
-  width: 480px; /* Set the width of the session */
-  height:150px; /* Set the height of the session */
-
-  border: 2px solid #ffffff; 
-  margin-left:100px;
-  margin-top:100px;
+  grid-template-columns: 1fr 1.7fr 1fr;
+  /*3 columns */
+  grid-gap: 20px;
+  /* Gap between grid items */
+  padding: 20px;
 
 }
-.session2{
-  background-color: #e3757527; 
-  padding: 20px; /* Add some padding for better visibility */
-  width: 800px; /* Set the width of the session */
-  height: 800px; /* Set the height of the session */
 
-  border: 2px solid #ffffff; 
-  margin-top:100px;
-  margin-left:0px;
+.session1 {
+ 
+  display: flex;
+  flex-direction: column;
+  /* Add some padding for better visibility */
+  /*width: 480px;  Set the width of the session */
+  /* Set the height of the session */
+
+  /* border: 2px solid #ffffff; */
+  /* margin-left: 100px; */
+  /* margin-top: 100px; */
+
 }
-.session3{
-  background-color: #ff626227; 
-  padding: 40px; /* Add some padding for better visibility */
-  width: 450px; /* Set the width of the session */
-  height: 760px; /* Set the height of the session */
-  border: 2px solid #ffffff; 
-  margin-top:100px;
-  margin-left:0px;
+
+.marquees {
+  background-color: #e3878727;
+  border: 2px solid #ffffff;
+}
+
+
+.typein {
+
+  text-align: left;
+  font-size: 20px;
+  background-color: #e3757527;
+  padding: 30px;
+  flex-grow: 1;
+  /* Add some padding for better visibility */
+  /*width: 460px; /* Set the width of the session */
+  
+  /* Set the height of the session */
+  border: 2px solid #ffffff;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  max-width: 435px;
+  /* Set a maximum width for the input fields */
+  /*width: 435px; /* Make sure the width doesn't exceed the maximum width */
+  background-color: rgba(255, 127, 127, 0.256);
+  border: 1px solid #ffffff;
+  color: #0299be;
+  outline: none;
+}
+
+input::placeholder {
+  color: #ffffff68;
+  /* Set the color you want for the placeholder text */
+}
+
+input:hover {
+  border: 1.2px solid #03b8e5;
+  /* Set the desired hover border color */
+
+  background-color: #03b8e51b;
+}
+.session2 {
+  background-color: #e3757527;
+  padding: 20px;
+  /* Add some padding for better visibility */
+  /* width: 800px;  Set the width of the session */
+
+  /* Set the height of the session */
+
+  border: 2px solid #ffffff;
+  margin-left: 0px;
+}
+
+.session3 {
+  background-color: #ff626227;
+  padding: 40px;
+  /* Add some padding for better visibility */
+  /* width: 450px; /* Set the width of the session */
+  
+  /* Set the height of the session */
+  border: 2px solid #ffffff;
 
   font-size: 20px;
   font-family: "magistral", sans-serif;
@@ -57,11 +121,15 @@ body,html {
   color: rgb(255, 255, 255);
   line-height: 2;
 }
+
 /***************************************/
-.typing{
-  white-space: pre-line; /* Preserve line breaks */
-  overflow: hidden; /* Hide overflowing text */
-  display: inline-block; /* Allow the width to change as text is added */
+.typing {
+  white-space: pre-line;
+  /* Preserve line breaks */
+  overflow: hidden;
+  /* Hide overflowing text */
+  display: inline-block;
+  /* Allow the width to change as text is added */
 }
 
 
@@ -75,18 +143,20 @@ body,html {
   height: 100%;
   z-index: -1;
   background: radial-gradient(circle at 10px 10px, #ffffff 1px, transparent 1px);
-  background-size: 20px 20px; /* Adjust the size of each dot and spacing */
+  background-size: 20px 20px;
+  /* Adjust the size of each dot and spacing */
 }
 
 
-h1{
+h1 {
   white-space: nowrap;
-  font-size: 47px;
+  font-size: clamp(20px, 20px + 2vw, 40px);
   text-align: center;
- 
- margin-top:-80px;
+
+  
 }
-.text1{
+
+.text1 {
   /* background-color: rgba(254, 98, 98, 0.281);
   background-clip: content-box;
   background-size:100% 20px;
@@ -95,61 +165,33 @@ h1{
   font-size: 20px;
   word-spacing: 10px;
 
- margin-right:20px;
-text-align: right;
+  margin-right: 20px;
+  text-align: right;
 
 }
 
 .moving1 {
-  font-size: 18px; /* Set the text size to 20 pixels */
+  font-size: 18px;
+  /* Set the text size to 20 pixels */
   color: #ff000079;
 }
-.moving2{
-  font-size: 18px; /* Set the text size to 20 pixels */
+
+.moving2 {
+  font-size: 18px;
+  /* Set the text size to 20 pixels */
   background-color: #ff000029;
 }
-.moving3{
-  font-size: 18px; /* Set the text size to 20 pixels */
+
+.moving3 {
+  font-size: 18px;
+  /* Set the text size to 20 pixels */
   color: #00d9ff79;
 }
 
-.typein{
 
-text-align: left;
-margin-top: 50px;
-font-size: 20px;
-margin-left: -21px;
-
-background-color: #e3757527; 
-  padding: 30px; /* Add some padding for better visibility */
-  width: 460px; /* Set the width of the session */
-  height: 268px; /* Set the height of the session */
-  border: 2px solid #ffffff;
-}
-
-input {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 20px;
-  max-width: 435px; /* Set a maximum width for the input fields */
-  width: 435px; /* Make sure the width doesn't exceed the maximum width */
-  background-color:  rgba(255, 127, 127, 0.256);
-  border: 1px solid #ffffff;
-  color: #0299be;
- outline: none;
-}
-input::placeholder {
-  color: #ffffff68; /* Set the color you want for the placeholder text */
-}
-input:hover {
-  border: 1.2px solid #03b8e5; /* Set the desired hover border color */
-
-  background-color: #03b8e51b;
-}
-
-.button1,.button2{
-  margin-left: auto;
+.button1,
+.button2 {
+  
   padding: 50px;
   background-color: #e01e1e2d;
   color: rgb(231, 110, 110);
@@ -161,52 +203,59 @@ input:hover {
   font-style: normal;
 
   border-radius: 5px;
+  aspect-ratio: 1 / 1;
+  flex-grow: 1; 
 
 }
+
 button:hover {
   background-color: #3de2ff42;
-  box-shadow: 0 8px 16px 0 rgba(124, 242, 255, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
-
+  box-shadow: 0 8px 16px 0 rgba(124, 242, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
+
 .button-container {
 
   display: flex;
-  gap: 20px; /* Adjust the space between buttons by changing this value */
-  justify-content: flex-end; 
-  margin-top:5px;
-margin-left:-20px;
+  gap: 20px;
+  /* Adjust the space between buttons by changing this value */
+  
+  
 
-background-color: #e3757527; 
-  padding: 20px; /* Add some padding for better visibility */
-  width: 480px; /* Set the width of the session */
-  height: 227px; /* Set the height of the session */
+  background-color: #e3757527;
+  padding: 20px;
+  /* Add some padding for better visibility */
+  /* width: 480px; /* Set the width of the session */
+ 
+  /* Set the height of the session */
   border: 2px solid #ffffff;
 }
 
-.current{
+.current {
   border: 1.5px solid #fee2e2;
-  max-width: 800px;
+  /*max-width: 800px;
   padding: 20px;
   margin: auto; /* Center the div horizontally */
-color:rgba(0, 214, 252, 0.655);
+  color: rgba(0, 214, 252, 0.655);
 
-font-size: 25px;
-font-family: "magistral", sans-serif;
-font-weight: 700;
-font-style: normal;
-list-style: none;
-background-color:  rgba(255, 255, 255, 0.119);
+  font-size: 25px;
+  font-family: "magistral", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.119);
 }
-.p{
-margin-top: -20px;
+
+.p {
+  margin-top: -20px;
   font-size: 18px;
   font-family: "magistral", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
-.border{
+
+.border {
   border: 1.5px solid #f7c6c6;
-  max-width: 800px;
+  /* max-width: 800px; */
   padding: 10px;
   /* margin: auto;  */
   font-size: 20px;
@@ -215,24 +264,25 @@ margin-top: -20px;
 
 .terminal {
   text-align: left;
-  margin: auto; /* Center the div horizontally */
+  margin: auto;
+  /* Center the div horizontally */
   white-space: pre-wrap;
   max-height: 355px;
-  max-width: 800px;
-  
+  /* max-width: 800px; */
+
   font-size: 22px;
   font-family: "magistral", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 
-list-style: none;
-scroll-behavior: smooth;
-overflow: scroll;
-/* Center the div horizontally */
--ms-overflow-style: none;
-/* IE and Edge */
-scrollbar-width: none;
-/* Firefox */
+  list-style: none;
+  scroll-behavior: smooth;
+  overflow: scroll;
+  /* Center the div horizontally */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .terminal::-webkit-scrollbar {
@@ -240,15 +290,13 @@ scrollbar-width: none;
 }
 
 #history li {
- 
+
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
 
-.header{
+.header {
   text-align: center;
-  margin-top:100px;
   /* position: static; */
 }
-
