@@ -8,17 +8,17 @@ const CONNECT_AUTOMATICALLY = true;
 if (CONNECT_AUTOMATICALLY) {
   main();
 } else {
-  connectButton.onclick = main;
+  // connectButton.onclick = main;
 }
 async function main() {
 
   // INITIALIZAING STEPS (SKIP TO THE BOTTOM TO WRITE YOUR OWN CODE)
-  loadingIconConnect.style.display = "block";
+  // loadingIconConnect.style.display = "block";
   // Check website compatibility
   if (navigator.userAgent.indexOf("Safari") != -1
     && navigator.userAgent.indexOf("Chrome") == -1) {
     alert("Please switch to a browser that supports Web3 (Chrome, Firefox, Brave, Edge, or Opera)");
-    loadingIconConnect.style.display = "none";
+    // loadingIconConnect.style.display = "none";
     return;
   }
   console.log("Browser is Web3 compatible");
@@ -26,7 +26,7 @@ async function main() {
   // Check if MetaMask is installed
   if (!window.ethereum) {
     alert("No Web3 Provider detected, please install MetaMask (https://metamask.io)");
-    loadingIconConnect.style.display = "none";
+    // loadingIconConnect.style.display = "none";
     return;
   }
   console.log("MetaMask is installed");
@@ -48,7 +48,7 @@ async function main() {
     const errorMessage = "Cannot connect to wallet. There might be an issue with another browser extenstion. Try disabling some browser extensions (other than MetaMask), then attempt to reconnect."
     console.error(errorMessage, error);
     alert(errorMessage);
-    loadingIconConnect.style.display = "none";
+    // loadingIconConnect.style.display = "none";
     return;
   }
   console.log("Wallet connected");
@@ -58,7 +58,7 @@ async function main() {
   const chainId = await provider.getNetwork();
   if (chainId.chainId != 80001) {
     alert("Please switch to the Mumbai in MetaMask. The page will refresh automatically after switching.");
-    loadingIconConnect.style.display = "none";
+    // loadingIconConnect.style.display = "none";
     return;
   }
   console.log("Connected to Mumbai");
@@ -66,9 +66,9 @@ async function main() {
   // AT THIS POINT, THE USER SHOULD BE SUCCESSFULLY CONNECTED TO THE DAPP
 
   // Update the page to show the user is connected
-  connectionStatus.textContent = "🟢 Connected";
+  // connectionStatus.textContent = "🟢 Connected";
 
-  connectButton.setAttribute("disabled", "true");
+  // connectButton.setAttribute("disabled", "true");
   //...............up is connection issues......................................//
 
    // MetaMask is our 'provider' in this case
@@ -87,12 +87,13 @@ async function main() {
   //......................................connection issues.....................
   // Display the address of the signed-in wallet
   const connectedWalletAddress = await signer.getAddress();
-  connectedWallet.textContent = connectedWalletAddress;
+  //connectedWallet.textContent = connectedWalletAddress;
   console.log(`Connected Wallet: ${connectedWalletAddress}`);
 
 
-  // hide the loading icon
-  loadingIconConnect.style.display = "none";
+  // ADD CODE TO INTERACT WITH THE CONTRACT
+
+  
 
 }
 

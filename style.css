@@ -30,6 +30,7 @@ body {
   grid-gap: 20px;
   /* Gap between grid items */
   padding: 20px;
+  height: 80vh;
 
 }
 
