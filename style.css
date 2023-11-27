@@ -23,7 +23,7 @@ body,html {
   background-color: #e3878727; 
   padding: 20px; /* Add some padding for better visibility */
   width: 480px; /* Set the width of the session */
-  height: 400px; /* Set the height of the session */
+  height:150px; /* Set the height of the session */
 
   border: 2px solid #ffffff; 
   margin-left:100px;
@@ -97,12 +97,25 @@ text-align: right;
 }
 .moving2{
   font-size: 18px; /* Set the text size to 20 pixels */
+  background-color: #ff000029;
 }
+.moving3{
+  font-size: 18px; /* Set the text size to 20 pixels */
+  color: #00d9ff79;
+}
+
 .typein{
+
 text-align: left;
-margin-left: 50px;
-margin-top: 40px;
+margin-top: 50px;
 font-size: 20px;
+margin-left: -21px;
+
+background-color: #e3757527; 
+  padding: 30px; /* Add some padding for better visibility */
+  width: 460px; /* Set the width of the session */
+  height: 268px; /* Set the height of the session */
+  border: 2px solid #ffffff;
 }
 
 input {
@@ -151,13 +164,13 @@ button:hover {
   display: flex;
   gap: 20px; /* Adjust the space between buttons by changing this value */
   justify-content: flex-end; 
-  margin-top:90px;
+  margin-top:5px;
 margin-left:-20px;
 
 background-color: #e3757527; 
   padding: 20px; /* Add some padding for better visibility */
   width: 480px; /* Set the width of the session */
-  height: 335px; /* Set the height of the session */
+  height: 227px; /* Set the height of the session */
   border: 2px solid #ffffff;
 }
 
