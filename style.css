@@ -128,7 +128,7 @@ input:hover {
   font-size: 20px;
 
   font-family: "magistral", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 
   border-radius: 5px;
@@ -159,14 +159,14 @@ background-color: #e3757527;
   max-width: 800px;
   padding: 20px;
   margin: auto; /* Center the div horizontally */
-color:rgb(255, 255, 255);
+color:rgba(150, 0, 0, 0.635);
 
 font-size: 25px;
 font-family: "magistral", sans-serif;
-font-weight: 500;
+font-weight: 700;
 font-style: normal;
 list-style: none;
-background-color:  rgba(255, 144, 144, 0.256);
+background-color:  rgba(229, 97, 97, 0.201);
 }
 .p{
 margin-top: -20px;
@@ -181,7 +181,7 @@ margin-top: -20px;
   padding: 10px;
   /* margin: auto;  */
   font-size: 20px;
-  background-color: #ffffff2a;
+  background-color: rgba(229, 97, 97, 0.201);
 }
 
 .terminal {
@@ -191,7 +191,7 @@ margin-top: -20px;
   max-height: 355px;
   max-width: 800px;
   
-  font-size: 25px;
+  font-size: 22px;
   font-family: "magistral", sans-serif;
 font-weight: 400;
 font-style: normal;
