@@ -197,6 +197,12 @@ function generateUserSentence() {
       historyList.scrollTop = historyList.scrollHeight;
   console.log(historyList.scrollHeight);
     });
+
+     // Clear the input fields
+  document.getElementById("verbInput").value = '';
+  document.getElementById("nounInput").value = '';
+  document.getElementById("timeInput").value = '';
+  
   }
   // Generate the sentence
   const generatedSentence = `${line1}\n${line2}\n${line3}\n${line4}`;
