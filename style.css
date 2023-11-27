@@ -159,14 +159,14 @@ background-color: #e3757527;
   max-width: 800px;
   padding: 20px;
   margin: auto; /* Center the div horizontally */
-color:rgba(150, 0, 0, 0.635);
+color:rgba(0, 214, 252, 0.655);
 
 font-size: 25px;
 font-family: "magistral", sans-serif;
 font-weight: 700;
 font-style: normal;
 list-style: none;
-background-color:  rgba(229, 97, 97, 0.201);
+background-color:  rgba(255, 255, 255, 0.119);
 }
 .p{
 margin-top: -20px;
@@ -181,7 +181,7 @@ margin-top: -20px;
   padding: 10px;
   /* margin: auto;  */
   font-size: 20px;
-  background-color: rgba(229, 97, 97, 0.201);
+  background-color: rgba(255, 255, 255, 0.201);
 }
 
 .terminal {
