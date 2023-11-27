@@ -91,6 +91,13 @@ text-align: right;
 
 }
 
+.moving1 {
+  font-size: 18px; /* Set the text size to 20 pixels */
+  color: #ff000079;
+}
+.moving2{
+  font-size: 18px; /* Set the text size to 20 pixels */
+}
 .typein{
 text-align: left;
 margin-left: 50px;
