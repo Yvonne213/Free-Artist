@@ -67,8 +67,8 @@ h1{
   white-space: nowrap;
   font-size: 50px;
   text-align: center;
-  margin-bottom: -20px;
-  margin-top: 150px;
+ 
+ margin-top:-80px;
 }
 .text1{
   background-color: rgba(254, 98, 98, 0.281);
@@ -85,8 +85,8 @@ h1{
 
 .typein{
 text-align: left;
-margin-left: 100px;
-margin-bottom: 10px;
+margin-left: 50px;
+margin-top: 40px;
 font-size: 20px;
 }
 
@@ -95,15 +95,15 @@ input {
   margin-bottom: 10px;
   padding: 10px;
   font-size: 20px;
-  max-width: 300px; /* Set a maximum width for the input fields */
-  width: 200px; /* Make sure the width doesn't exceed the maximum width */
+  max-width: 358px; /* Set a maximum width for the input fields */
+  width: 358px; /* Make sure the width doesn't exceed the maximum width */
   background-color:  rgb(249, 198, 198);
   border: 1px solid #ffffff;
   color: #ff6e6e;
  outline: none;
 }
 input::placeholder {
-  color: #ffffff5d; /* Set the color you want for the placeholder text */
+  color: #ffffff77; /* Set the color you want for the placeholder text */
 }
 input:hover {
   border-color: #fd4343; /* Set the desired hover border color */
@@ -134,7 +134,7 @@ button:hover {
   display: flex;
   gap: 20px; /* Adjust the space between buttons by changing this value */
   justify-content: flex-end; 
-  margin-top:120px;
+  margin-top:90px;
 margin-left:-20px;
 
 
@@ -156,7 +156,7 @@ margin-left:-20px;
   margin: auto; /* Center the div horizontally */
   
   white-space: pre-wrap;
-  max-height: 380px;
+  max-height: 400px;
   max-width: 800px;
   
   font-size: 20px;
