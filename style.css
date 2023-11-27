@@ -16,18 +16,19 @@ body,html {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Two columns */
+  grid-template-columns: repeat(3, 1fr); /*3 columns */
   grid-gap: 20px; /* Gap between grid items */
 }
 .session1{
   background-color: #e3878727; 
   padding: 20px; /* Add some padding for better visibility */
   width: 480px; /* Set the width of the session */
-  height: 800px; /* Set the height of the session */
+  height: 400px; /* Set the height of the session */
 
   border: 2px solid #ffffff; 
   margin-left:100px;
   margin-top:100px;
+
 }
 .session2{
   background-color: #e3878727; 
@@ -109,7 +110,8 @@ input:hover {
 }
 
 .button1,.button2{
-  padding: 50px 16px;
+  margin-left: auto;
+  padding: 50px;
   background-color: rgb(255, 209, 209);
   color: rgb(255, 255, 255);
   border: 1.5px solid #ffffff;
@@ -130,12 +132,17 @@ button:hover {
 .button-container {
 
   display: flex;
-  gap: 50px; /* Adjust the space between buttons by changing this value */
+  gap: 20px; /* Adjust the space between buttons by changing this value */
   justify-content: flex-end; 
-  margin-top:10px;
-  margin-right: 100px;
-  margin-bottom: 50px;
+  margin-top:120px;
+margin-left:-20px;
 
+
+  background-color: #e3878727;
+  padding: 20px; /* Add some padding for better visibility */
+  width: 480px; /* Set the width of the session */
+  height: 335px; /* Set the height of the session */
+  border: 2px solid #ffffff;
 }
 
 .border{
