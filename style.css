@@ -31,7 +31,7 @@ body,html {
 
 }
 .session2{
-  background-color: #e3878727; 
+  background-color: #e3757527; 
   padding: 20px; /* Add some padding for better visibility */
   width: 800px; /* Set the width of the session */
   height: 800px; /* Set the height of the session */
@@ -55,6 +55,7 @@ body,html {
   font-weight: 200;
   font-style: normal;
   text-align: left;
+  color: rgb(184, 100, 100);
 }
 
 .grid-container {
@@ -106,7 +107,7 @@ input {
   width: 358px; /* Make sure the width doesn't exceed the maximum width */
   background-color:  rgba(255, 127, 127, 0.256);
   border: 1px solid #ffffff;
-  color: #03b8e5;
+  color: #0299be;
  outline: none;
 }
 input::placeholder {
@@ -121,9 +122,9 @@ input:hover {
 .button1,.button2{
   margin-left: auto;
   padding: 50px;
-  background-color: rgba(255, 169, 169, 0.345);
+  background-color: #ffffff2d;
   color: rgb(184, 100, 100);
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.929);
   font-size: 20px;
 
   font-family: "magistral", sans-serif;
@@ -134,7 +135,7 @@ input:hover {
 
 }
 button:hover {
-  background-color: #3df5ff4b;
+  background-color: #3df5ff28;
   box-shadow: 0 8px 16px 0 rgba(124, 242, 255, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 
 }
@@ -146,8 +147,7 @@ button:hover {
   margin-top:90px;
 margin-left:-20px;
 
-
-  background-color: #e3878727;
+background-color: #e3757527; 
   padding: 20px; /* Add some padding for better visibility */
   width: 480px; /* Set the width of the session */
   height: 335px; /* Set the height of the session */
@@ -155,30 +155,40 @@ margin-left:-20px;
 }
 
 .current{
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid #fee2e2;
   max-width: 800px;
   padding: 20px;
   margin: auto; /* Center the div horizontally */
-color:rgb(184, 100, 100);
+color:rgb(255, 114, 114);
 
 font-size: 25px;
 font-family: "magistral", sans-serif;
 font-weight: 500;
 font-style: normal;
 list-style: none;
+background-color: #fddcdc1d;
+}
+.p{
+margin-top: -20px;
+  font-size: 18px;
+  font-family: "magistral", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .border{
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid #f7c6c6;
   max-width: 800px;
-  padding: 20px;
-  margin: auto; /* Center the div horizontally */
+  padding: 10px;
+  /* margin: auto;  */
+  font-size: 20px;
+  background-color: #ffffff2a;
 }
 
 .terminal {
-
+  text-align: left;
   margin: auto; /* Center the div horizontally */
   white-space: pre-wrap;
-  max-height: 370px;
+  max-height: 355px;
   max-width: 800px;
   
   font-size: 25px;
@@ -210,6 +220,6 @@ scrollbar-width: none;
 .header{
   text-align: center;
   margin-top:100px;
-  position: static;
+  /* position: static; */
 }
 
