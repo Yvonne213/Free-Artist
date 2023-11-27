@@ -159,14 +159,14 @@ background-color: #e3757527;
   max-width: 800px;
   padding: 20px;
   margin: auto; /* Center the div horizontally */
-color:rgb(255, 114, 114);
+color:rgb(255, 255, 255);
 
 font-size: 25px;
 font-family: "magistral", sans-serif;
 font-weight: 500;
 font-style: normal;
 list-style: none;
-background-color: #fddcdc1d;
+background-color:  rgba(255, 144, 144, 0.256);
 }
 .p{
 margin-top: -20px;
