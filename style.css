@@ -41,11 +41,10 @@ body,html {
   margin-left:0px;
 }
 .session3{
-  background-color: #e3878727; 
-  padding: 20px; /* Add some padding for better visibility */
-  width: 480px; /* Set the width of the session */
-  height: 800px; /* Set the height of the session */
-
+  background-color: #ff626227; 
+  padding: 40px; /* Add some padding for better visibility */
+  width: 450px; /* Set the width of the session */
+  height: 760px; /* Set the height of the session */
   border: 2px solid #ffffff; 
   margin-top:100px;
   margin-left:0px;
@@ -55,8 +54,18 @@ body,html {
   font-weight: 200;
   font-style: normal;
   text-align: left;
-  color: rgb(184, 100, 100);
+  color: rgb(255, 255, 255);
+  line-height: 2;
 }
+/***************************************/
+.typing{
+  white-space: pre-line; /* Preserve line breaks */
+  overflow: hidden; /* Hide overflowing text */
+  display: inline-block; /* Allow the width to change as text is added */
+}
+
+
+/***************************************/
 
 .grid-container {
   position: fixed;
