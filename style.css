@@ -53,17 +53,17 @@ body {
 
 
 .typein {
-
   text-align: left;
   font-size: 20px;
   background-color: #e3757527;
-  padding: 30px;
+  padding: 40px;
   flex-grow: 1;
   /* Add some padding for better visibility */
   /*width: 460px; /* Set the width of the session */
   
   /* Set the height of the session */
   border: 2px solid #ffffff;
+
 }
 
 input {
@@ -71,7 +71,8 @@ input {
   margin-bottom: 10px;
   padding: 10px;
   font-size: 20px;
-  max-width: 435px;
+
+
   /* Set a maximum width for the input fields */
   /*width: 435px; /* Make sure the width doesn't exceed the maximum width */
   background-color: rgba(255, 127, 127, 0.256);
@@ -149,9 +150,9 @@ input:hover {
 
 h1 {
   white-space: nowrap;
-  font-size: clamp(20px, 20px + 2vw, 60px);
+  font-size: clamp(10px, 20px + 2vw, 80px);
   text-align: center;
-
+margin:auto;
   
 }
 
@@ -161,7 +162,7 @@ h1 {
   background-size:100% 20px;
   width: 255px; */
 
-  font-size: 20px;
+  font-size: clamp(20px, 20px + 2vw, 20px);
   word-spacing: 10px;
 
   margin-right: 20px;
@@ -290,13 +291,7 @@ button:hover {
 }
 
 #history li {
-
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-
-.header {
-  text-align: center;
-  /* position: static; */
-}
