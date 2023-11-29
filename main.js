@@ -100,9 +100,7 @@ async function main() {
 
 //-----------------------------------------------------
 let generatedWindow; // Variable to store the reference to the opened window
-
 var ws = new WebSocket("ws://192.168.194.100:8765");
-
 
 ws.onmessage = function (event) {
   // trigger the message update
@@ -245,7 +243,7 @@ document.getElementById("generate-button").addEventListener("click", generateRan
 //----------typing effect----------------------
 
 const paragraph = document.getElementById('typing-text');
-  const text = `"Artist Poem" is an Ethereum contract that enables individuals to define the term "Artist." Participants can contribute words they believe are associated with artists, and the contract will securely store their definitions on the Blockchain permanently. 
+  const text = `"Artist Poem" is an Ethereum contract that enables individuals to define the term "Artist". Participants can contribute words they believe are associated with artists, and the contract will securely store their definitions on the Blockchain permanently. 
   In theory, as a sufficient number of definitions are input by the audience, the repetition in the database will lead the artist manifesto to gradually converge toward a midpoint. However, before reaching that point, let's play and create first.`;
   let index = 0;
 
