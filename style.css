@@ -84,16 +84,19 @@ body {
   background-color: #e3757527;
   padding: 40px 20px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* Add some padding for better visibility */
   /*width: 460px; /* Set the width of the session */
-  
   /* Set the height of the session */
+  line-height: 0.7; /* Adjust the line-height value as needed */
   border: 2px solid #ffffff;
 }
 
 input {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
   padding: 10px;
   font-size: 20px;
   /* Set a maximum width for the input fields */
