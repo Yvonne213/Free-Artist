@@ -184,7 +184,7 @@ margin:auto;
   margin: auto; /* Center the div horizontally */
   color: rgba(0, 214, 252, 0.655);
 
-  font-size: 25px;
+  font-size:clamp(22px, 1.2vw, 35px);
   font-family: "magistral", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -200,10 +200,11 @@ margin:auto;
   /* margin: auto;  */
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.201);
+  
 }
 .note {
   margin-top: -20px;
-  font-size: clamp(18px, 1vw, 20px);
+  font-size: clamp(22px, 1vw, 20px);
   font-family: "magistral", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -217,7 +218,7 @@ margin:auto;
   /* max-width: 800px; */
   overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
 
-  font-size: 22px;
+  font-size:clamp(18px, 1vw, 35px);
   font-family: "magistral", sans-serif;
   font-weight: 400;
   font-style: normal;
