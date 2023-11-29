@@ -4,7 +4,7 @@ html {
   position: relative;
   z-index: 1;
 
-  background-color: rgb(255, 209, 209);
+  background-color: rgb(253, 204, 204);
   color: rgb(255, 255, 255);
   text-align: center;
 
@@ -20,6 +20,18 @@ body {
   min-height: 100vh;
 }
 
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 10px 10px, #ffffff 1px, transparent 1px);
+  background-size: 20px 20px;
+  /* Adjust the size of each dot and spacing */
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1.7fr 1fr;
@@ -31,8 +43,9 @@ body {
 
 }
 
+/***************************************/
+
 .session1 {
- 
   display: flex;
   flex-direction: column;
   /* Add some padding for better visibility */
@@ -42,19 +55,32 @@ body {
   /* border: 2px solid #ffffff; */
   /* margin-left: 100px; */
   /* margin-top: 100px; */
-
 }
-
+/********************/
 .marquees {
   background-color: #e3878727;
   border: 2px solid #ffffff;
   padding: 20px;
+  font-size:clamp(20px, 1vw, 30px);
+}
+.moving1 {
+  /* Set the text size to 20 pixels */
+  color: #ff000079;
 }
 
+.moving2 {
+  /* Set the text size to 20 pixels */
+  background-color: #ff000029;
+}
 
+.moving3 {
+  /* Set the text size to 20 pixels */
+  color: #00d9ff79;
+}
+/********************/
 .typein {
   text-align: left;
-  font-size: 20px;
+  font-size: clamp(20px, 1vw, 40px);
   background-color: #e3757527;
   padding: 40px 20px;
   flex-grow: 1;
@@ -63,7 +89,6 @@ body {
   
   /* Set the height of the session */
   border: 2px solid #ffffff;
-
 }
 
 input {
@@ -71,8 +96,6 @@ input {
   margin-bottom: 10px;
   padding: 10px;
   font-size: 20px;
-
-
   /* Set a maximum width for the input fields */
   /*width: 435px; /* Make sure the width doesn't exceed the maximum width */
   background-color: rgba(255, 127, 127, 0.256);
@@ -92,103 +115,7 @@ input:hover {
 
   background-color: #03b8e51b;
 }
-.session2 {
-  background-color: #e3757527;
-  padding: 20px;
-  /* Add some padding for better visibility */
-  /* width: 800px;  Set the width of the session */
-
-  /* Set the height of the session */
-
-  border: 2px solid #ffffff;
-  margin-left: 0px;
-}
-
-.session3 {
-  background-color: #ff626227;
-  padding: 40px;
-  /* Add some padding for better visibility */
-  /* width: 450px; /* Set the width of the session */
-  
-  /* Set the height of the session */
-  border: 2px solid #ffffff;
-
-  font-size: 20px;
-  font-family: "magistral", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  text-align: left;
-  color: rgb(255, 255, 255);
-  line-height: 2;
-}
-
-/***************************************/
-.typing {
-  white-space: pre-line;
-  /* Preserve line breaks */
-  overflow: hidden;
-  /* Hide overflowing text */
-  display: inline-block;
-  /* Allow the width to change as text is added */
-}
-
-
-/***************************************/
-
-.grid-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: radial-gradient(circle at 10px 10px, #ffffff 1px, transparent 1px);
-  background-size: 20px 20px;
-  /* Adjust the size of each dot and spacing */
-}
-
-
-h1 {
-  white-space: nowrap;
-  font-size: clamp(10px, 20px + 2vw, 80px);
-  text-align: center;
-margin:auto;
-  
-}
-
-.text1 {
-  /* background-color: rgba(254, 98, 98, 0.281);
-  background-clip: content-box;
-  background-size:100% 20px;
-  width: 255px; */
-
-  font-size: clamp(20px, 20px + 2vw, 20px);
-  word-spacing: 10px;
-
-  margin-right: 20px;
-  text-align: right;
-
-}
-
-.moving1 {
-  font-size: 18px;
-  /* Set the text size to 20 pixels */
-  color: #ff000079;
-}
-
-.moving2 {
-  font-size: 18px;
-  /* Set the text size to 20 pixels */
-  background-color: #ff000029;
-}
-
-.moving3 {
-  font-size: 18px;
-  /* Set the text size to 20 pixels */
-  color: #00d9ff79;
-}
-
-
+/********************/
 .button1,
 .button2 {
   
@@ -196,7 +123,7 @@ margin:auto;
   background-color: #e01e1e2d;
   color: rgb(231, 110, 110);
   border: 1.5px solid rgba(255, 255, 255, 0.929);
-  font-size: 20px;
+  font-size: clamp(20px, 1vw, 30px);
 
   font-family: "magistral", sans-serif;
   font-weight: 700;
@@ -227,7 +154,25 @@ button:hover {
   /* Set the height of the session */
   border: 2px solid #ffffff;
 }
+/***************************************/
+.session2 {
+  background-color: #e3757527;
+  padding: 20px;
+  /* Add some padding for better visibility */
+  /* width: 800px;  Set the width of the session */
+  /* Set the height of the session */
+  border: 2px solid #ffffff;
+  margin-left: 0px;
+}
+h1 {
+  white-space: nowrap;
+  font-size: clamp(10px, 20px + 2vw, 80px);
+  text-align: center;
+margin:auto;
+  
+}
 
+/********************/
 .current {
   border: 1.5px solid #fee2e2;
   /*max-width: 800px;
@@ -243,16 +188,8 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.119);
   padding: 20px;
 }
-
-.p {
-  margin-top: -20px;
-  font-size: 18px;
-  font-family: "magistral", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.border {
+/********************/
+.typein-history{
   border: 1.5px solid #f7c6c6;
   /* max-width: 800px; */
   padding: 10px;
@@ -260,8 +197,14 @@ button:hover {
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.201);
 }
-
-.terminal {
+.note {
+  margin-top: -20px;
+  font-size: clamp(18px, 1vw, 20px);
+  font-family: "magistral", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.history-record {
   text-align: left;
   margin: auto;
   /* Center the div horizontally */
@@ -284,12 +227,55 @@ button:hover {
   /* Firefox */
 }
 
-.terminal::-webkit-scrollbar {
+.history-record::-webkit-scrollbar {
   display: none;
 }
 
 #history li {
   margin-bottom: 20px;
   padding-bottom: 20px;
+}
+
+/***************************************/
+.session3 {
+  background-color: #ff626227;
+  padding: 40px;
+  /* Add some padding for better visibility */
+  /* width: 450px; /* Set the width of the session */
+  
+  /* Set the height of the session */
+  border: 2px solid #ffffff;
+
+  font-size: 20px;
+  font-family: "magistral", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  line-height: 2;
+}
+
+/********************/
+.typing {
+  white-space: pre-line;
+  /* Preserve line breaks */
+  overflow: hidden;
+  /* Hide overflowing text */
+  display: inline-block;
+  /* Allow the width to change as text is added */
+}
+
+/********************/
+
+.signature {
+  /* background-color: rgba(254, 98, 98, 0.281);
+  background-clip: content-box;
+  background-size:100% 20px;
+  width: 255px; */
+  font-size: clamp(20px, 1vw, 30px);
+  word-spacing: 10px;
+  margin-right: 20px;
+  text-align: right;
+
 }
 
