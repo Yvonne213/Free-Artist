@@ -39,7 +39,7 @@ body {
   grid-gap: 20px;
   /* Gap between grid items */
   padding: 20px;
-  height: 80vh;
+  min-height: 80vh;
 
 }
 
@@ -162,7 +162,8 @@ button:hover {
   /* width: 800px;  Set the width of the session */
   /* Set the height of the session */
   border: 2px solid #ffffff;
-  margin-left: 0px;
+
+ 
 }
 h1 {
   white-space: nowrap;
@@ -209,8 +210,9 @@ margin:auto;
   margin: auto;
   /* Center the div horizontally */
   white-space: pre-wrap;
-  max-height: 500px;
+  max-height: 37vh;
   /* max-width: 800px; */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
 
   font-size: 22px;
   font-family: "magistral", sans-serif;
@@ -263,6 +265,7 @@ margin:auto;
   /* Hide overflowing text */
   display: inline-block;
   /* Allow the width to change as text is added */
+  font-size: clamp(20px, 1vw, 40px);
 }
 
 /********************/
