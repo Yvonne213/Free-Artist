@@ -1,6 +1,8 @@
 import asyncio
 import websockets
 
+
+
 connected = set()
 
 async def server(websocket, path):
@@ -18,7 +20,9 @@ async def server(websocket, path):
         # Unregister websocket connection
         connected.remove(websocket)
 
-start_server = websockets.serve(server, "localhost", 8765)
+start_server = websockets.serve(server, "0.0.0.0", 8765)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
+
+

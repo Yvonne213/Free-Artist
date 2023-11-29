@@ -93,7 +93,7 @@ async function main() {
 
   // ADD CODE TO INTERACT WITH THE CONTRACT
 
-  
+
 
 }
 
@@ -101,7 +101,7 @@ async function main() {
 //-----------------------------------------------------
 let generatedWindow; // Variable to store the reference to the opened window
 
-var ws = new WebSocket("ws://localhost:8765");
+var ws = new WebSocket("ws://192.168.194.100:8765");
 
 
 ws.onmessage = function (event) {
