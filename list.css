@@ -1,0 +1,71 @@
+body,
+html {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+
+  font-family: "magistral", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  min-height: 100vh;
+}
+
+.previous-artist-container{
+  border: 1.5px solid #f7c6c6;
+  width: 50vw;
+}
+
+.history-list {
+  margin: auto;
+  /* Center the div horizontally */
+  padding: 10px;
+  /* margin: auto;  */
+  height:85vh;
+  width:45vw;
+  max-width: 90%; /* Adjust as needed */
+  white-space: pre-wrap;
+  /* Add the ability to scroll */
+  scroll-behavior: smooth;
+  overflow: scroll;
+  max-width: 100vw;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  font-size: clamp(18px, 2vw, 150px);
+  list-style: none;
+  /* Remove the default list-style */
+  padding:clamp(20px, 2vw, 100px);
+
+}
+
+.history-list::-webkit-scrollbar {
+  display: none;
+}
+
+#history li {
+
+  width: 100%;
+  /* border-bottom: 1px dotted black; */
+  border-style: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .previous-artist-container,
+  .history-list {
+    width: 80vw;
+  }
+}

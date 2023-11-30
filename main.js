@@ -104,20 +104,23 @@ var ws = new WebSocket("ws://192.168.194.100:8765");
 
 ws.onmessage = function (event) {
   // trigger the message update
-  console.log("sentence recieved! do something here!");
+  console.log("sentence received! do something here!");
   console.log(event.data);
   generatedSentence = event.data;
- //DO SOMETHING HERE 
 
   // Add the generated sentence to the history
   sentenceHistory.push(generatedSentence);
 
-  // Update the terminal with the latest sentence
-  const terminal = document.getElementById("terminal");
-  terminal.textContent = generatedSentence;
+  // Check if the current page is the third HTML page
+  const isThirdHTML = window.location.href.includes("list.html");
+
+  // Update the terminal with the latest sentence (on other pages)
+  if (!isThirdHTML) {
+    const terminal = document.getElementById("terminal");
+    terminal.textContent = generatedSentence;
+  }
 
   // Update the sentence history list
-  
   const historyList = document.getElementById("history");
   historyList.innerHTML = '';
   sentenceHistory.forEach((sentence, index) => {
@@ -125,13 +128,11 @@ ws.onmessage = function (event) {
     listItem.textContent = sentence;
 
     historyList.appendChild(listItem);
-
   });
+
   historyList.scrollTop = historyList.scrollHeight;
   console.log(historyList.scrollHeight);
 };
-
-
 
 
 // ---------------------------------------------------------------------
