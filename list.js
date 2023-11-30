@@ -18,8 +18,8 @@ ws.onmessage = function (event) {
 
   // Update the sentence history list
   const historyList = document.getElementById("history");
-  if(historyList) {
-  historyList.innerHTML = '';
+  if (historyList) {
+    historyList.innerHTML = '';
   }
   sentenceHistory.forEach((sentence, index) => {
     const listItem = document.createElement("li");

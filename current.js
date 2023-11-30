@@ -26,5 +26,5 @@ const displayButton = document.getElementById("display-button");
 if (displayButton) {
   displayButton.addEventListener("click", generateUserSentence);
   // Add click event listener to the "Generate Sentence" button
-document.getElementById("generate-button").addEventListener("click", generateRandomSentence);
+  document.getElementById("generate-button").addEventListener("click", generateRandomSentence);
 }
