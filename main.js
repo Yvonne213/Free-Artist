@@ -188,7 +188,7 @@ function generateUserSentence() {
     // Display the generated sentence
     const terminal = document.getElementById("terminal");
     terminal.textContent = generatedSentence;
-    terminal.style.color = "#000000";
+
 
     // Add the generated sentence to the history
     sentenceHistory.push(generatedSentence);
