@@ -6,7 +6,7 @@ html {
 
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  text-align: center;
+
 
   font-family: "magistral", sans-serif;
   font-weight: 400;
@@ -22,13 +22,30 @@ body {
   min-height: 100vh;
 }
 
-.previous-artist-container{
-  border: 1.5px solid #f7c6c6;
-  width: 50vw;
+.tips{
+  font-size: clamp(18px, 2vw, 150px);/*!!!based on the screen size to change*/
 }
 
+.previous-artist-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: clamp(1px, 0.2vw, 20px) solid #f7c6c6;
+  width: 50vw;
+  height: 85vh;
+  
+  overflow: auto;
+  overflow: hidden; /* Hide any content that overflows */
+}
+
+
 .history-list {
-  padding: 10px;
+    text-align: center;
+  box-sizing: border-box;
+  overflow: auto;
+
   /* margin: auto;  */
   height:85vh;
   width:45vw;
@@ -41,10 +58,11 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
-  font-size: clamp(18px, 2vw, 150px);
+  font-size: clamp(18px, 4vw, 100px);/*!!!based on the screen size to adjust*/
   list-style: none;
   /* Remove the default list-style */
   padding:clamp(20px, 2vw, 100px);
+  margin:0;
 
 }
 
@@ -56,14 +74,13 @@ body {
   width: 100%;
   /* border-bottom: 1px dotted black; */
   border-style: hidden;
-  margin-bottom: clamp(20px, 2vw, 100px);
-  padding-bottom: clamp(20px, 2vw, 100px);
+    padding: clamp(20px, 4vw, 100px) 0px;
 }
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
   .previous-artist-container,
   .history-list {
-    width: 80vw;
+    width: 100vw;
   }
 }
