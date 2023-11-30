@@ -93,8 +93,6 @@ async function main() {
 
   // ADD CODE TO INTERACT WITH THE CONTRACT
 
-
-
 }
 
 
@@ -164,11 +162,8 @@ let times = [
 ];
 
 const sentenceHistory = [];
-
 // Function to generate a sentence based on user input
 function generateUserSentence() {
-
-    
   const verbInput = document.getElementById("verbInput").value;
   const nounInput = document.getElementById("nounInput").value;
   const timeInput = document.getElementById("timeInput").value;
@@ -188,7 +183,6 @@ function generateUserSentence() {
     // Display the generated sentence
     const terminal = document.getElementById("terminal");
     terminal.textContent = generatedSentence;
-
 
     // Add the generated sentence to the history
     sentenceHistory.push(generatedSentence);
@@ -241,7 +235,6 @@ function generateRandomSentence() {
 
   sendMessage(generatedSentence);
 
-  
 }
 
 const displayButton = document.getElementById("display-button");
