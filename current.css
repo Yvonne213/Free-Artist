@@ -24,7 +24,7 @@ body {
 
 .terminal1 {
     box-sizing: border-box; 
-    width: 75vw;/*!!!based on the screen size to adjust*/
+    width: 90vw;/*!!!based on the screen size to adjust*/
     height:80vh;
     text-align: center;
   border: clamp(1px, 0.1vw, 20px) solid #fc8888;
