@@ -23,7 +23,8 @@ body {
 }
 
 .tips{
-  font-size: clamp(18px, 2vw, 150px);/*!!!based on the screen size to change*/
+  font-size: clamp(2vw, 1vw, 4vw);/*!!!based on the screen size to change*/
+color: #f7c6c6;
 }
 
 .previous-artist-container{
@@ -32,8 +33,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  border: clamp(1px, 0.2vw, 20px) solid #f7c6c6;
-  width: 55vw;/*!!!based on the screen size to adjust*/
+  border: clamp(0.1vw, 0.2vw, 0.6vw) solid #f7c6c6;
+  width: 60vw;/*!!!based on the screen size to adjust*/
   height: 87vh;
   
   overflow: auto;
@@ -55,10 +56,10 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
-  font-size: clamp(18px, 3vw, 150px);/*!!!based on the screen size to adjust*/
+  font-size: clamp(0.5vw, 3vw, 100vw);/*!!!based on the screen size to adjust*/
   list-style: none;
   /* Remove the default list-style */
-  padding:clamp(20px, 2vw, 150px);
+  padding:clamp(2vw, 1vw, 10vw);
   margin:0;
 
 }
@@ -71,7 +72,7 @@ body {
   width: 100%;
   /* border-bottom: 1px dotted black; */
   border-style: hidden;
-    padding: clamp(20px, 4vw, 100px) 0px;
+    padding: clamp(2vw, 4vw, 40vw) 0;
 }
 
 /* Media Query for smaller screens */
