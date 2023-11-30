@@ -118,11 +118,14 @@ ws.onmessage = function (event) {
   if (!isThirdHTML) {
     const terminal = document.getElementById("terminal");
     terminal.textContent = generatedSentence;
+    terminal.style.color = "red"
   }
 
   // Update the sentence history list
   const historyList = document.getElementById("history");
+  if(historyList) {
   historyList.innerHTML = '';
+  }
   sentenceHistory.forEach((sentence, index) => {
     const listItem = document.createElement("li");
     listItem.textContent = sentence;
@@ -185,6 +188,7 @@ function generateUserSentence() {
     // Display the generated sentence
     const terminal = document.getElementById("terminal");
     terminal.textContent = generatedSentence;
+    terminal.style.color = "#000000";
 
     // Add the generated sentence to the history
     sentenceHistory.push(generatedSentence);
@@ -240,11 +244,14 @@ function generateRandomSentence() {
   
 }
 
+const displayButton = document.getElementById("display-button");
 // Add click event listener to the "Display Sentence" button
-document.getElementById("display-button").addEventListener("click", generateUserSentence);
-
-// Add click event listener to the "Generate Sentence" button
+if (displayButton) {
+  displayButton.addEventListener("click", generateUserSentence);
+  // Add click event listener to the "Generate Sentence" button
 document.getElementById("generate-button").addEventListener("click", generateRandomSentence);
+}
+
 
 //----------typing effect----------------------
 
@@ -254,6 +261,7 @@ const paragraph = document.getElementById('typing-text');
   let index = 0;
 
   function typeNextCharacter() {
+    if(!paragraph) return;
     if (index < text.length) {
       paragraph.appendChild(document.createTextNode(text.charAt(index)));
       index++;
