@@ -164,6 +164,8 @@ const sentenceHistory = [];
 
 // Function to generate a sentence based on user input
 function generateUserSentence() {
+
+    
   const verbInput = document.getElementById("verbInput").value;
   const nounInput = document.getElementById("nounInput").value;
   const timeInput = document.getElementById("timeInput").value;
@@ -179,7 +181,7 @@ function generateUserSentence() {
     const line4 = `is an artist`;
 
     const generatedSentence = `${line1}\n${line2}\n${line3}\n${line4}`;
-
+   
     // Display the generated sentence
     const terminal = document.getElementById("terminal");
     terminal.textContent = generatedSentence;
@@ -220,6 +222,7 @@ function generateUserSentence() {
 
 // Function to generate a random sentence
 function generateRandomSentence() {
+  
   const randomVerb = verbs[Math.floor(Math.random() * verbs.length)];
   const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
   const randomTime = times[Math.floor(Math.random() * times.length)];
