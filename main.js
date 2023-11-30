@@ -132,6 +132,8 @@ ws.onmessage = function (event) {
 };
 
 
+
+
 // ---------------------------------------------------------------------
 function sendMessage(content_content){
   console.log("send out ws message");
