@@ -13,9 +13,11 @@ html {
   font-style: normal;
 }
 body {
+   /*make the content in the center*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center; /* Center content horizontally */
   min-height: 100vh;
 }
@@ -26,13 +28,10 @@ body {
 }
 
 .history-list {
-  margin: auto;
-  /* Center the div horizontally */
   padding: 10px;
   /* margin: auto;  */
   height:85vh;
   width:45vw;
-  max-width: 90%; /* Adjust as needed */
   white-space: pre-wrap;
   /* Add the ability to scroll */
   scroll-behavior: smooth;
@@ -54,12 +53,11 @@ body {
 }
 
 #history li {
-
   width: 100%;
   /* border-bottom: 1px dotted black; */
   border-style: hidden;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: clamp(20px, 2vw, 100px);
+  padding-bottom: clamp(20px, 2vw, 100px);
 }
 
 /* Media Query for smaller screens */
