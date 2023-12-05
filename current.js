@@ -15,10 +15,20 @@ ws.onmessage = function (event) {
   if (!isThirdHTML) {
     const terminal = document.getElementById("terminal");
     terminal.textContent = generatedSentence;
-    terminal.style.color = "red"
+    // Set a random color for the terminal
+const randomColor = getRandomColor();
+console.log('Random Color:', randomColor);
+terminal.style.color = randomColor;
   }
 };
-
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 const sentenceHistory = [];
 
 const displayButton = document.getElementById("display-button");
